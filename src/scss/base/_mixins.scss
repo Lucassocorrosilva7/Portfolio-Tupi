@@ -1,0 +1,39 @@
+@use "./variables" as v;
+
+@mixin phone{
+   @media (min-width: v.$sm) {
+    @content;
+   }
+}
+
+@mixin tablet{
+   @media (min-width: v.$md) {
+    @content;
+   }
+}
+
+@mixin desktop{
+   @media (min-width: v.$xl) {
+    @content;
+   }
+}
+
+@mixin grid($columns, $gap){
+   display: grid;
+   align-items: center;
+   gap: $gap;
+   grid-template-columns: repeat($columns, 1fr);
+}
+
+@mixin hr{
+   font-weight: 400;
+   
+      &::after {
+         content: '';
+         display: block;
+         height: 0.5rem;
+         width: 2rem;
+         margin-bottom: 1rem;
+         background: v.$bg-primary;
+      }
+}

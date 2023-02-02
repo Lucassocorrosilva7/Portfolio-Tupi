@@ -1,0 +1,115 @@
+@use "../scss/base" as v;
+@use '../scss/base' as m;
+
+.about {
+  display: flex;
+  padding: 5rem 0;
+  flex-direction: column;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include m.phone {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.name {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
+  color: v.$bg-black;
+}
+
+.function {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: v.$bg-black;
+}
+
+.img {
+  background-color: v.$bg-primary;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.text {
+  text-align: center;
+  color: v.$bg-white;
+
+  @include m.phone {
+    text-align: left;
+  }
+}
+
+.tech {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+
+  p {
+    background-color: v.$bg-primary;
+    padding: 0.8rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  @include m.phone {
+    justify-content: flex-start;
+  }
+
+  p {
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+}
+
+
+.col-2 {
+  //   text-align: center;
+
+  &__heading {
+    @include m.hr;
+    margin-bottom: 4rem;
+  }
+
+  @include m.tablet {
+    text-align: left;
+  }
+}
+
+a {
+  font-size: 2.5rem;
+  color: v.$bg-primary;
+}

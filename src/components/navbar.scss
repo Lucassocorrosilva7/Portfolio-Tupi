@@ -1,0 +1,40 @@
+@use '../scss/base' as v;
+
+.navbar {
+    width: 100%;
+    box-shadow: v.$shadow;
+
+    &__center {
+        max-width: 150rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+
+    .logo {
+       
+            font-weight: bold;
+                font-size: 2rem;
+                color: v.$bg-primary;
+        
+    }
+
+
+    &__links {
+        display: flex;
+        gap: 2rem;
+
+        &--link {
+            font-size: 1.6rem;
+            color: v.$bg-gray;
+            font-weight: 700;
+        }
+    }
+}
+
+.active {
+    color: v.$bg-primary;
+}

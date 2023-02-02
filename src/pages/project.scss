@@ -1,0 +1,21 @@
+@use "../scss/base" as m;
+@use "../scss/base" as v;
+
+.projects {
+  min-height: calc(100vh - 8.1rem);
+  background-color: v.$bg-primary;
+
+
+}
+
+.project {
+  padding: 5rem;
+
+  @include m.phone {
+    @include m.grid(2, 1rem);
+  }
+
+  @include m.tablet {
+    @include m.grid(3, 1rem);
+  }
+}
