@@ -44,7 +44,10 @@ const About = () => {
             <a href="mailto:lucassocorrosilva@gmail.com">
               <FaEnvelope />
             </a>
-            <a href="https://www.frontendmentor.io/profile/Lucassocorrosilva7">
+            <a
+              href="https://www.frontendmentor.io/profile/Lucassocorrosilva7"
+              target="_blank"
+            >
               <SiFrontendmentor />
             </a>
           </div>
