@@ -9,7 +9,7 @@
 }
 
 .project {
-  padding: 5rem;
+  padding: 2rem;
 
   @include m.phone {
     @include m.grid(2, 1rem);
