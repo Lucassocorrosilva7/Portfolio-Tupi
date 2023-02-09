@@ -7,30 +7,29 @@ import Image from "../assets/images/hero.png";
 const About = () => {
   return (
     <section className="about container">
-      <div className="col-1">
-        <div className="img">
+      <div className="about__info">
+        <div className="about__info-img">
           <img src={Image} alt="image" />
         </div>
-        <div className="text">
-          <h2 className="name">Lucas Silva</h2>
+        <div className="about__info-content">
+          <h2 className="about__info-content--name">Lucas Silva</h2>
           {aboutText.map((item) => {
             const { id, icon, text } = item;
             return (
               <div key={id}>
-                <p className="function">
+                <p className="about__info-content--personal">
                   {icon}
                   {text}
                 </p>
               </div>
             );
           })}
-          <p className="city"></p>
-          <div className="tech">
+          <div className="about__info-content--skills">
             {skills.map((item, id) => (
               <p key={id}>{item.skill}</p>
             ))}
           </div>
-          <div className="links">
+          <div className="about__info-content--links">
             <a
               href="https://www.linkedin.com/in/luquinhasssilva/"
               target="_blank"
@@ -53,8 +52,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="col-2">
-        <h2 className="col-2__heading">Conheça-me!</h2>
+      <div className="about__texts">
+        <h2 className="about__texts-heading">Conheça-me!</h2>
         {texts.map((item) => {
           const { id, text } = item;
           return (
