@@ -8,7 +8,7 @@ const Blog = () => {
         <div className="square"></div>
         <div className="square"></div>
       </div>
-      <h2>Em desenvolvimento...</h2>
+      <h3>Em desenvolvimento...</h3>
     </div>
   );
 };
