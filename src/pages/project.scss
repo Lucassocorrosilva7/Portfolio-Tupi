@@ -3,7 +3,13 @@
 
 .projects {
   min-height: calc(100vh - 8rem);
-  background-color: v.$bg-primary;
+
+  &__heading {
+    text-align: left;
+    padding: 4rem;
+    color: v.$bg-black;
+    @include m.hr;
+  }
 }
 
 .project {

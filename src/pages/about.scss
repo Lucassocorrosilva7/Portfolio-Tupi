@@ -28,10 +28,7 @@
     justify-content: center;
     overflow: hidden;
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
+
   }
 
   &__info-content {
@@ -45,7 +42,7 @@
     &--name::first-letter {
       text-transform: uppercase;
       color: v.$bg-primary;
-      font-size: 7rem;
+      font-size: 5rem;
     }
 
     &--name {
@@ -53,6 +50,7 @@
       font-size: 4rem;
       font-weight: bold;
       color: v.$bg-black;
+      font-family: v.$ff-secondary;
     }
 
     &--personal {
@@ -73,7 +71,7 @@
         background-color: v.$bg-primary;
         padding: 0.8rem;
         font-weight: bold;
-        font-size: 1.4rem;
+        font-size: v.$text-sm;
         border-radius: 0.5rem;
       }
     }
@@ -95,16 +93,15 @@
       p {
         padding: 0.5rem;
         font-weight: bold;
-        font-size: 1.6rem;
       }
     }
   }
 
   &__texts {
 
-    &__texts-heading {
+    &--heading {
       @include m.hr;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
 
     @include m.tablet {

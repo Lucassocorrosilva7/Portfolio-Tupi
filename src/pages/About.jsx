@@ -1,10 +1,12 @@
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { SiFrontendmentor } from "react-icons/si";
 import "./about.scss";
-import { skills, texts, aboutText } from "../utils/api";
 import Image from "../assets/images/hero.png";
+import useProjects from "../hooks/useProjects";
 
 const About = () => {
+  const { info, skill, text } = useProjects();
+
   return (
     <section className="about container">
       <div className="about__info">
@@ -13,21 +15,23 @@ const About = () => {
         </div>
         <div className="about__info-content">
           <h2 className="about__info-content--name">Lucas Silva</h2>
-          {aboutText.map((item) => {
-            const { id, icon, text } = item;
-            return (
-              <div key={id}>
-                <p className="about__info-content--personal">
+          <div>
+            {info.map((currentInfo) => {
+              const { id, text, icon } = currentInfo;
+              return (
+                <p key={id} className="about__info-content--personal">
                   {icon}
                   {text}
                 </p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
           <div className="about__info-content--skills">
-            {skills.map((item, id) => (
-              <p key={id}>{item.skill}</p>
-            ))}
+            {skill.map((currentSkill) => {
+              const { id, skill } = currentSkill;
+              return <p key={id}>{skill}</p>;
+            })}
           </div>
           <div className="about__info-content--links">
             <a
@@ -53,15 +57,13 @@ const About = () => {
         </div>
       </div>
       <div className="about__texts">
-        <h2 className="about__texts-heading">Conheça-me!</h2>
-        {texts.map((item) => {
-          const { id, text } = item;
-          return (
-            <div key={id}>
-              <p>{text}</p>
-            </div>
-          );
-        })}
+        <h2 className="about__texts--heading">Conheça-me!</h2>
+        <div>
+          {text.map((currentText) => {
+            const { id, about } = currentText;
+            return <p key={id}>{about}</p>;
+          })}
+        </div>
       </div>
     </section>
   );

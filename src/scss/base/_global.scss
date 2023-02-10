@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@use './variables' as v;
 
 *,
 *::before,
@@ -8,22 +8,17 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
-
-body {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.6rem;
-}
-
 a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .container {
+    max-width: v.$container-width;
     margin: 0 auto;
-    max-width: 120rem;
     width: 95%;
 }

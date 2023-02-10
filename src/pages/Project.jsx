@@ -7,6 +7,7 @@ const Project = () => {
 
   return (
     <div className="projects">
+      <h2 className="projects__heading container">Projetos</h2>
       <div className="project container">
         {project.length > 0 ? (
           <Card projects={project} />

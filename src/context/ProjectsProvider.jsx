@@ -1,10 +1,13 @@
 import { createContext, useState, useEffect } from "react";
-import { projects } from "../utils/api";
+import { projects, skills, texts, infos } from "../utils/api";
 
 const ProjectsContext = createContext();
 
 const ProjectsProvider = ({ children }) => {
   const [project, setProject] = useState([]);
+  const [skill, setSkill] = useState([]);
+  const [text, setText] = useState([]);
+  const [info, setInfo] = useState([]);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -14,10 +17,37 @@ const ProjectsProvider = ({ children }) => {
     fetchProjects();
   }, []);
 
+  useEffect(() => {
+    const fecthInfo = async () => {
+      const res = await infos;
+      setInfo(res);
+    };
+    fecthInfo();
+  }, []);
+
+  useEffect(() => {
+    const fetchskills = async () => {
+      const res = await skills;
+      setSkill(res);
+    };
+    fetchskills();
+  }, []);
+
+  useEffect(() => {
+    const fetchText = async () => {
+      const res = await texts;
+      setText(res);
+    };
+    fetchText();
+  }, []);
+
   return (
     <ProjectsContext.Provider
       value={{
         project,
+        skill,
+        text,
+        info,
       }}
     >
       {children}

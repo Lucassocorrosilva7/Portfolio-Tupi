@@ -1,39 +1,39 @@
 @use "./variables" as v;
 
-@mixin phone{
+@mixin phone {
    @media (min-width: v.$sm) {
-    @content;
+      @content;
    }
 }
 
-@mixin tablet{
+@mixin tablet {
    @media (min-width: v.$md) {
-    @content;
+      @content;
    }
 }
 
-@mixin desktop{
+@mixin desktop {
    @media (min-width: v.$xl) {
-    @content;
+      @content;
    }
 }
 
-@mixin grid($columns, $gap){
+@mixin grid($columns, $gap) {
    display: grid;
    align-items: center;
    gap: $gap;
    grid-template-columns: repeat($columns, 1fr);
 }
 
-@mixin hr{
+@mixin hr {
    font-weight: 400;
-   
-      &::after {
-         content: '';
-         display: block;
-         height: 0.5rem;
-         width: 2rem;
-         margin-bottom: 1rem;
-         background: v.$bg-primary;
-      }
+
+   &::after {
+      content: '';
+      display: block;
+      height: 0.5rem;
+      width: 2rem;
+      margin-bottom: 1rem;
+      background: v.$bg-primary;
+   }
 }

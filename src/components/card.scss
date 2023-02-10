@@ -4,7 +4,7 @@
 .card {
   min-height: 30rem;
   margin: 1rem auto;
-  background-color: v.$bg-white;
+  border: 3px solid v.$bg-primary;
   border-radius: 8px;
   z-index: 1;
 
@@ -69,9 +69,6 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-
-
-
 
     &--button {
       display: inline-block;
