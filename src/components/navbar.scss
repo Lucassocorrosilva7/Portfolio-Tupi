@@ -3,6 +3,7 @@
 .navbar {
     width: 100%;
     box-shadow: v.$shadow;
+    height: 8rem;
 
     &__center {
         max-width: 150rem;
@@ -15,11 +16,11 @@
 
 
     .logo {
-       
-            font-weight: bold;
-                font-size: 2rem;
-                color: v.$bg-primary;
-        
+
+        font-weight: bold;
+        font-size: 2rem;
+        color: v.$bg-primary;
+
     }
 
 

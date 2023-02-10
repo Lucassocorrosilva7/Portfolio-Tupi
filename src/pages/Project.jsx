@@ -1,15 +1,18 @@
 import "./project.scss";
 import Card from "../components/Card";
-import { useState } from "react";
-import { projects } from "../utils/api";
+import useProjects from "../hooks/useProjects";
 
 const Project = () => {
-  const [project, setProject] = useState(projects);
+  const { project } = useProjects();
 
   return (
     <div className="projects">
       <div className="project container">
-        <Card projects={project} />
+        {project.length > 0 ? (
+          <Card projects={project} />
+        ) : (
+          <p>Carregando projetos...</p>
+        )}
       </div>
     </div>
   );

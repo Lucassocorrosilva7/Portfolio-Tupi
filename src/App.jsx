@@ -1,10 +1,12 @@
-import Router from "./routers/router"
-
+import { ProjectsProvider } from "./context/ProjectsProvider";
+import Router from "./routers/router";
 
 const App = () => {
   return (
-    <Router/>
-  )
-}
+    <ProjectsProvider>
+      <Router />
+    </ProjectsProvider>
+  );
+};
 
-export default App
+export default App;

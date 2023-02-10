@@ -1,10 +1,11 @@
+import { FaGithub } from "react-icons/fa";
 import "./card.scss";
 
 const Card = ({ projects }) => {
   return (
     <>
-      {projects.map((project) => {
-        const { id, title, description, url } = project;
+      {projects.map((currentproject) => {
+        const { id, title, description, url, code } = currentproject;
         return (
           <article className="card" key={id}>
             <div className="tools">
@@ -21,9 +22,23 @@ const Card = ({ projects }) => {
             <div className="content">
               <h2 className="content__title">{title}</h2>
               <p className="content__description">{description}</p>
-              <a className="content__button" href={url} target="_blank">
-                Ver projeto
-              </a>
+              <div className="content__buttons">
+                <a
+                  className="content__buttons--button"
+                  href={url}
+                  target="_blank"
+                >
+                  Ver projeto
+                </a>
+                <a
+                  className="content__buttons--button link"
+                  href={code}
+                  target="_blank"
+                >
+                  Código fonte
+                  <FaGithub />
+                </a>
+              </div>
             </div>
           </article>
         );

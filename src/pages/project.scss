@@ -2,10 +2,8 @@
 @use "../scss/base" as v;
 
 .projects {
-  min-height: calc(100vh - 8.1rem);
+  min-height: calc(100vh - 8rem);
   background-color: v.$bg-primary;
-
-
 }
 
 .project {
