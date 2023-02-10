@@ -1,0 +1,20 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: v.$ff-primary;
+    font-size: v.$text-base;
+}
+
+h2 {
+    font-family: v.$ff-secondary;
+    font-size: 3rem;
+
+    @include m.tablet {
+        font-size: 4rem;
+    }
+}
