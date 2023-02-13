@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import { projects, skills, texts, infos } from "../utils/api";
+import { projects, skills, texts, infos, links } from "../utils/api";
 
 const ProjectsContext = createContext();
 
@@ -8,6 +8,7 @@ const ProjectsProvider = ({ children }) => {
   const [skill, setSkill] = useState([]);
   const [text, setText] = useState([]);
   const [info, setInfo] = useState([]);
+  const [link, setLink] = useState([]);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -41,6 +42,14 @@ const ProjectsProvider = ({ children }) => {
     fetchText();
   }, []);
 
+  useEffect(() => {
+    const fetchLink = async () => {
+      const res = await links;
+      setLink(res);
+    };
+    fetchLink();
+  });
+
   return (
     <ProjectsContext.Provider
       value={{
@@ -48,6 +57,7 @@ const ProjectsProvider = ({ children }) => {
         skill,
         text,
         info,
+        link,
       }}
     >
       {children}
