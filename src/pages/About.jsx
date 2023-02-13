@@ -1,11 +1,9 @@
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import { SiFrontendmentor } from "react-icons/si";
 import "./about.scss";
-import Image from "../assets/images/hero.png";
 import useProjects from "../hooks/useProjects";
+import Image from "../assets/images/hero.png";
 
 const About = () => {
-  const { info, skill, text } = useProjects();
+  const { info, skill, text, link } = useProjects();
 
   return (
     <section className="about container">
@@ -34,25 +32,14 @@ const About = () => {
             })}
           </div>
           <div className="about__info-content--links">
-            <a
-              href="https://www.linkedin.com/in/luquinhasssilva/"
-              target="_blank"
-            >
-              <FaLinkedin />
-            </a>
-            <a href="https://github.com/Lucassocorrosilva7" target="_blank">
-              <FaGithub />
-            </a>
-
-            <a href="mailto:lucassocorrosilva@gmail.com">
-              <FaEnvelope />
-            </a>
-            <a
-              href="https://www.frontendmentor.io/profile/Lucassocorrosilva7"
-              target="_blank"
-            >
-              <SiFrontendmentor />
-            </a>
+            {link.map((currentLink) => {
+              const { id, url, icon } = currentLink;
+              return (
+                <a key={id} href={url} target="_blank">
+                  {icon}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
