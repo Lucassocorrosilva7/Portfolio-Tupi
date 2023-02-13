@@ -1,4 +1,6 @@
 import { FiMapPin, FiBriefcase } from "react-icons/fi";
+import { FaLinkedin, FaGithub, FaEnvelope, FaYoutube } from "react-icons/fa";
+import { SiFrontendmentor } from "react-icons/si";
 
 export const infos = [
   {
@@ -59,4 +61,20 @@ export const projects = [
     url: "https://imoinnovate.netlify.app/",
     code: "https://github.com/Lucassocorrosilva7/ImoInnovate",
   },
+];
+
+export const links = [
+  {
+    id: 1,
+    url: "https://www.linkedin.com/in/luquinhasssilva/",
+    icon: <FaLinkedin />,
+  },
+  { id: 2, url: "https://github.com/Lucassocorrosilva7", icon: <FaGithub /> },
+  { id: 3, url: "mailto:lucassocorrosilva@gmail.com", icon: <FaEnvelope /> },
+  {
+    id: 4,
+    url: "https://www.frontendmentor.io/profile/Lucassocorrosilva7",
+    icon: <SiFrontendmentor />,
+  },
+  { id: 5, url: "https://www.youtube.com/@tupicode", icon: <FaYoutube /> },
 ];
