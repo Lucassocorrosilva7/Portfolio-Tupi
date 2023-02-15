@@ -98,6 +98,7 @@
   }
 
   &__texts {
+    margin-top: 2rem;
 
     &--heading {
       @include m.hr;
@@ -106,6 +107,7 @@
 
     @include m.tablet {
       text-align: left;
+      margin-top: 0;
     }
   }
 
