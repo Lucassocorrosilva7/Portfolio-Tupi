@@ -1,6 +1,20 @@
 import { createContext, useState, useEffect } from "react";
 import { projects, skills, texts, infos, links } from "@/utils/api";
 
+const useDataLoader = (setData, dataApi) => {
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await dataApi;
+        setData(res);
+      } catch (error) {
+        console.log(`Erro ao buscar dados ${error}`);
+      }
+    };
+    fetchData();
+  }, []);
+};
+
 const ProjectsContext = createContext();
 
 const ProjectsProvider = ({ children }) => {
@@ -10,45 +24,11 @@ const ProjectsProvider = ({ children }) => {
   const [info, setInfo] = useState([]);
   const [link, setLink] = useState([]);
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      const res = await projects;
-      setProject(res);
-    };
-    fetchProjects();
-  }, []);
-
-  useEffect(() => {
-    const fecthInfo = async () => {
-      const res = await infos;
-      setInfo(res);
-    };
-    fecthInfo();
-  }, []);
-
-  useEffect(() => {
-    const fetchskills = async () => {
-      const res = await skills;
-      setSkill(res);
-    };
-    fetchskills();
-  }, []);
-
-  useEffect(() => {
-    const fetchText = async () => {
-      const res = await texts;
-      setText(res);
-    };
-    fetchText();
-  }, []);
-
-  useEffect(() => {
-    const fetchLink = async () => {
-      const res = await links;
-      setLink(res);
-    };
-    fetchLink();
-  });
+  useDataLoader(setProject, projects);
+  useDataLoader(setSkill, skills);
+  useDataLoader(setText, texts);
+  useDataLoader(setInfo, infos);
+  useDataLoader(setLink, links);
 
   return (
     <ProjectsContext.Provider
