@@ -1,5 +1,5 @@
-import { ProjectsProvider } from "./context/ProjectsProvider";
-import Router from "./routers/router";
+import { ProjectsProvider } from "@/context/ProjectsProvider";
+import Router from "@/routers/router";
 
 const App = () => {
   return (

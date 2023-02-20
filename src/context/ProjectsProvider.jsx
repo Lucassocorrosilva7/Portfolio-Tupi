@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-import { projects, skills, texts, infos, links } from "../utils/api";
+import { projects, skills, texts, infos, links } from "@/utils/api";
 
 const ProjectsContext = createContext();
 

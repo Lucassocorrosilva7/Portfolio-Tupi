@@ -1,6 +1,6 @@
 import "./about.scss";
-import useProjects from "../hooks/useProjects";
-import Image from "../assets/images/hero.png";
+import useProjects from "@/hooks/useProjects";
+import Image from "@/assets/images/hero.png";
 
 const About = () => {
   const { info, skill, text, link } = useProjects();
