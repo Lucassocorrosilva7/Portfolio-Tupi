@@ -37,6 +37,7 @@ export const projects = [
       "Aplicação web desenvolvida para representar um banco digital moderno, feito em HTML, Css e JavaScript.",
     url: "https://banksaintly.netlify.app/",
     code: "https://github.com/Lucassocorrosilva7/BankSaintly",
+    buttonText: "Código fonte",
   },
   {
     id: 2,
@@ -44,6 +45,7 @@ export const projects = [
     description:
       "Aplicação web desenvolvida para representar uma concessionária fictícia, feito React, Javascript, Sass, Axios, Vercel.",
     url: `https://lmcars.vercel.app/`,
+    buttonText: "Código Privado",
   },
   {
     id: 3,
@@ -52,6 +54,7 @@ export const projects = [
       "Aplicação web desenvolvida para representar um delivery moderno, feito em HTML, Sass, Gulp, JavaScript.",
     url: "https://foodsaintly.netlify.app/",
     code: "https://github.com/Lucassocorrosilva7/Food-Saintly",
+    buttonText: "Código fonte",
   },
   {
     id: 4,
@@ -60,6 +63,7 @@ export const projects = [
       "Projeto ImoInnovate é uma plataforma imobiliária que foi desenvolvida com o objetivo de oferecer aos usuários uma experiência visual atraente e intuitiva.",
     url: "https://imoinnovate.netlify.app/",
     code: "https://github.com/Lucassocorrosilva7/ImoInnovate",
+    buttonText: "Código fonte",
   },
 ];
 
