@@ -5,7 +5,8 @@ const Card = ({ projects }) => {
   return (
     <>
       {projects.map((currentproject) => {
-        const { id, title, description, url, code } = currentproject;
+        const { id, title, description, url, code, buttonText } =
+          currentproject;
         return (
           <article className="card" key={id}>
             <div className="tools">
@@ -35,7 +36,7 @@ const Card = ({ projects }) => {
                   href={code}
                   target="_blank"
                 >
-                  Código fonte
+                  {buttonText}
                   <FaGithub />
                 </a>
               </div>
