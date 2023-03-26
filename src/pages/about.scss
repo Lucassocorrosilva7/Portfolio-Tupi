@@ -1,5 +1,5 @@
 @use "../scss/base" as v;
-@use '../scss/base' as m;
+@use "../scss/base" as m;
 
 .about {
   display: flex;
@@ -18,7 +18,7 @@
   }
 
   &__info-img {
-    background-color: v.$bg-primary;
+    background: v.$bg-gradient;
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
@@ -27,8 +27,6 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-
-
   }
 
   &__info-content {
@@ -62,19 +60,18 @@
       color: v.$bg-black;
     }
 
-
     &--skills {
       display: flex;
       gap: 1rem;
       margin: 2rem 0;
 
       p {
-        background-color: v.$bg-primary;
+        background: v.$bg-gradient;
         padding: 0.8rem;
         font-weight: bold;
         font-size: v.$text-sm;
         border-radius: 0.5rem;
-        transition: opacity .2s ease;
+        transition: opacity 0.2s ease;
 
         &:hover {
           filter: brightness(0.9);
@@ -117,5 +114,4 @@
       margin-top: 0;
     }
   }
-
 }

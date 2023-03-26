@@ -83,6 +83,11 @@
       z-index: 1;
       font-family: inherit;
 
+      &:hover {
+        transition: all 0.3s;
+        color: v.$bg-white;
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -90,7 +95,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: v.$bg-primary;
+        background: v.$bg-gradient;
         transform: translateX(-100%);
         transition: all 0.3s;
         z-index: -1;
