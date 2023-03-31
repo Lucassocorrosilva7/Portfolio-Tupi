@@ -65,6 +65,14 @@ export const projects = [
     code: "https://github.com/Lucassocorrosilva7/ImoInnovate",
     buttonText: "Código fonte",
   },
+  {
+    id: 5,
+    title: "Indyara Stephanie",
+    description:
+      "É uma plataforma com foco em agendamento de consultas on-line",
+    url: "https://indy-front.vercel.app/",
+    buttonText: "Código Privado",
+  },
 ];
 
 export const links = [
