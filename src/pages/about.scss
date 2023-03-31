@@ -38,11 +38,7 @@
       text-align: left;
     }
 
-    &--name::first-letter {
-      text-transform: uppercase;
-      color: v.$bg-primary;
-      font-size: 4rem;
-    }
+
 
     &--name {
       margin-bottom: 1rem;
@@ -50,7 +46,16 @@
       font-weight: bold;
       color: v.$bg-black;
       font-family: v.$ff-secondary;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        width: 4rem;
+      }
     }
+
+
 
     &--personal {
       display: flex;
@@ -66,7 +71,7 @@
       margin: 2rem 0;
 
       p {
-        background: v.$bg-gradient;
+        background: v.$bg-primary;
         padding: 0.8rem;
         font-weight: bold;
         font-size: v.$text-sm;

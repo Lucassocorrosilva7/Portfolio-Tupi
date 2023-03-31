@@ -1,6 +1,7 @@
 import "./about.scss";
 import useProjects from "@/hooks/useProjects";
 import Image from "@/assets/images/hero.png";
+import Flag from "@/assets/images/brazil.svg";
 
 const About = () => {
   const { info, skill, text, link } = useProjects();
@@ -12,7 +13,9 @@ const About = () => {
           <img src={Image} alt="image" />
         </div>
         <div className="about__info-content">
-          <h2 className="about__info-content--name">Lucas Silva</h2>
+          <h2 className="about__info-content--name">
+            Lucas Silva <img src={Flag} alt="bandeira do brasil" />
+          </h2>
           <div>
             {info.map((currentInfo) => {
               const { id, text, icon } = currentInfo;
