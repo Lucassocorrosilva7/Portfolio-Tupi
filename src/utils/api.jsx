@@ -19,14 +19,15 @@ export const texts = [
   {
     id: 1,
     about:
-      "Olá, meu nome é Lucas Silva e sou desenvolvedor front-end e UI designer. Gostaria de me apresentar e compartilhar alguns fatos-chave sobre mim. Sou apaixonado por tecnologia e me dedico principalmente ao desenvolvimento front-end, especialmente no ecossistema JavaScript. Estou sempre buscando aprender e crescer na minha área para oferecer soluções criativas e eficientes para meus projetos.",
+      "Formado em Segurança da Informação, sou apaixonado por tecnologia e sempre busco ampliar meus conhecimentos e crescer na minha área para oferecer soluções inovadoras e eficientes em meus projetos. Dedico a maior parte do meu tempo ao desenvolvimento de aplicativos front-end, especialmente no ecossistema JavaScript, mas também tenho conhecimentos sólidos em back-end.",
   },
 ];
 
 export const skills = [
-  { id: 1, skill: `Typescript` },
-  { id: 2, skill: `React` },
-  { id: 3, skill: `Laravel` },
+  { id: 1, skill: "Typescript" },
+  { id: 2, skill: "NestJs" },
+  { id: 3, skill: "NextJs" },
+  { id: 4, skill: "Laravel" },
 ];
 
 export const projects = [
@@ -69,7 +70,7 @@ export const projects = [
     id: 5,
     title: "Indyara Stephanie",
     description:
-      "É uma plataforma com foco em agendamento de consultas on-line",
+      "É uma plataforma com foco em agendamento de consultas on-line.",
     url: "https://indy-front.vercel.app/",
     buttonText: "Código Privado",
   },
