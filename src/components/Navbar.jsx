@@ -21,7 +21,7 @@ const Navbar = () => {
               nav.isActive ? "active" : ""}`}
             to="/projetos"
           >
-            Projeto
+            Projetos
           </NavLink>
           <NavLink
             className={`navbar__links--link ${(nav) =>
