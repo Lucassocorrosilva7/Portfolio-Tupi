@@ -1,14 +1,12 @@
 import "./about.scss";
 import useProjects from "@/hooks/useProjects";
 import Image from "@/assets/images/hero.png";
-import Navbar from "@/components/Navbar";
 
 const About = () => {
   const { info, skill, text, link } = useProjects();
 
   return (
     <>
-      <Navbar />
       <section className="about container">
         <div className="about__info">
           <div className="about__info-img">

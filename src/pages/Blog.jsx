@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 const Blog = () => {
   return (
     <>
-      <Navbar />
       <div className="container blog">
         <div className="loader">
           <div className="square"></div>
