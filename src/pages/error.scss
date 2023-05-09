@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #fff;
+    color: v.$bg-white;
     gap: 2rem;
     font-size: 2rem;
 
@@ -19,7 +19,7 @@
 }
 
 .btn-back {
-    background-color: #fff;
+    background-color: v.$bg-white;
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
