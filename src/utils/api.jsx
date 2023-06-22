@@ -25,9 +25,10 @@ export const texts = [
 
 export const skills = [
   { id: 1, skill: "Typescript" },
-  { id: 2, skill: "NestJs" },
-  { id: 3, skill: "NextJs" },
-  { id: 4, skill: "Laravel" },
+  { id: 2, skill: "ReactJs" },
+  { id: 3, skill: "VueJs" },
+  { id: 4, skill: "NestJs" },
+  { id: 5, skill: "Laravel" },
 ];
 
 export const projects = [
