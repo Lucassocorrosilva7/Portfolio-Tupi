@@ -75,6 +75,14 @@ export const projects = [
     url: "https://indy-front.vercel.app/",
     buttonText: "Código Privado",
   },
+  {
+    id: 6,
+    title: "LmStore",
+    description:
+      "LmStore é uma loja virtual moderna e intuitiva, projetada para oferecer aos nossos clientes uma experiência de compra única e envolvente.",
+    url: "https://lm-store.vercel.app/",
+    buttonText: "Código Privado",
+  },
 ];
 
 export const links = [
