@@ -72,7 +72,7 @@ export const projects = [
     title: "Indyara Stephanie",
     description:
       "É uma plataforma com foco em agendamento de consultas on-line.",
-    url: "https://indy-front.vercel.app/",
+    url: "https://indyara.vercel.app/",
     buttonText: "Código Privado",
   },
   {
