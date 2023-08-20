@@ -23,13 +23,7 @@ const Navbar = () => {
           >
             Projetos
           </NavLink>
-          <NavLink
-            className={`navbar__links--link ${(nav) =>
-              nav.isActive ? "active" : ""}`}
-            to="/blog"
-          >
-            Blog
-          </NavLink>
+        
         </div>
       </div>
     </nav>
