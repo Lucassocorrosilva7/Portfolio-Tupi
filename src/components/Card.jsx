@@ -31,14 +31,16 @@ const Card = ({ projects }) => {
                 >
                   Ver projeto
                 </a>
-                <a
-                  className="content__buttons--button link"
-                  href={code}
-                  target="_blank"
-                >
-                  {buttonText}
-                  <FaGithub />
-                </a>
+                {code && (
+                  <a
+                    className="content__buttons--button link"
+                    href={code}
+                    target="_blank"
+                  >
+                    {buttonText}
+                    <FaGithub />
+                  </a>
+                )}
               </div>
             </div>
           </article>

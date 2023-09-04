@@ -73,7 +73,6 @@ export const projects = [
     description:
       "É uma plataforma com foco em agendamento de consultas on-line.",
     url: "https://indyara.vercel.app/",
-    buttonText: "Código Privado",
   },
   {
     id: 6,
@@ -81,7 +80,13 @@ export const projects = [
     description:
       "LmStore é uma loja virtual moderna e intuitiva, projetada para oferecer aos nossos clientes uma experiência de compra única e envolvente.",
     url: "https://lm-store.vercel.app/",
-    buttonText: "Código Privado",
+  },
+  {
+    id: 7,
+    title: "GuitarraLA",
+    description:
+      "GuitarraLA é uma loja Online de Guitarras, Simples e Moderna, para uma Experiência de Compra Excepcional.",
+    url: "https://guitarra-la.vercel.app/",
   },
 ];
 
