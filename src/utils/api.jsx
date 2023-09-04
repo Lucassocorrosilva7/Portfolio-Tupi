@@ -85,7 +85,7 @@ export const projects = [
     id: 7,
     title: "GuitarraLA",
     description:
-      "GuitarraLA é uma loja Online de Guitarras, Simples e Moderna, para uma Experiência de Compra Excepcional.",
+      "GuitarraLA é uma loja online de guitarras, simples e moderna, para uma experiência de compra excepcional.",
     url: "https://guitarra-la.vercel.app/",
   },
 ];
