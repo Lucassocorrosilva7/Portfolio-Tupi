@@ -19,7 +19,7 @@ export const texts = [
   {
     id: 1,
     about:
-      "Formado em Segurança da Informação, sou apaixonado por tecnologia e sempre busco ampliar meus conhecimentos e crescer na minha área para oferecer soluções inovadoras e eficientes em meus projetos. Dedico a maior parte do meu tempo ao desenvolvimento de aplicativos front-end, especialmente no ecossistema JavaScript, mas também tenho conhecimentos sólidos em back-end.",
+      "Formado em Segurança da Informação, sou apaixonado por tecnologia e estou sempre em busca de novos conhecimentos para oferecer soluções inovadoras e eficazes. Com uma forte dedicação ao desenvolvimento front-end, especialmente no ecossistema JavaScript, também possuo conhecimentos sólidos em back-end, o que me permite criar projetos completos e bem integrados.",
   },
 ];
 
@@ -27,8 +27,9 @@ export const skills = [
   { id: 1, skill: "Typescript" },
   { id: 2, skill: "ReactJs" },
   { id: 3, skill: "VueJs" },
-  { id: 4, skill: "NestJs" },
-  { id: 5, skill: "Laravel" },
+  { id: 4, skill: "AngularJs" },
+  { id: 5, skill: "NestJs" },
+  { id: 6, skill: "Java" },
 ];
 
 export const projects = [
@@ -67,20 +68,20 @@ export const projects = [
     code: "https://github.com/Lucassocorrosilva7/ImoInnovate",
     buttonText: "Código fonte",
   },
-  {
-    id: 5,
-    title: "Indyara Stephanie",
-    description:
-      "É uma plataforma com foco em agendamento de consultas on-line.",
-    url: "https://indyara.vercel.app/",
-  },
-  {
-    id: 6,
-    title: "LmStore",
-    description:
-      "LmStore é uma loja virtual moderna e intuitiva, projetada para oferecer aos nossos clientes uma experiência de compra única e envolvente.",
-    url: "https://lm-store.vercel.app/",
-  },
+  // {
+  //   id: 5,
+  //   title: "Indyara Stephanie",
+  //   description:
+  //     "É uma plataforma com foco em agendamento de consultas on-line.",
+  //   url: "https://indyara.vercel.app/",
+  // },
+  // {
+  //   id: 6,
+  //   title: "LmStore",
+  //   description:
+  //     "LmStore é uma loja virtual moderna e intuitiva, projetada para oferecer aos nossos clientes uma experiência de compra única e envolvente.",
+  //   url: "https://lm-store.vercel.app/",
+  // },
   {
     id: 7,
     title: "GuitarraLA",
@@ -88,6 +89,12 @@ export const projects = [
       "GuitarraLA é uma loja online de guitarras, simples e moderna, para uma experiência de compra excepcional.",
     url: "https://guitarra-la.vercel.app/",
   },
+  {
+    id: 8,
+    title: "Novo Padrão Esquadrias",
+    description: "Site para a empresa de esquadrias de alumínio, focado em captar clientes e apresentar produtos de forma intuitiva.",
+    url: "https://www.novopadraoesquadrias.com.br"
+  }
 ];
 
 export const links = [
@@ -98,10 +105,4 @@ export const links = [
   },
   { id: 2, url: "https://github.com/Lucassocorrosilva7", icon: <FaGithub /> },
   { id: 3, url: "mailto:lucassocorrosilva@gmail.com", icon: <FaEnvelope /> },
-  {
-    id: 4,
-    url: "https://www.frontendmentor.io/profile/Lucassocorrosilva7",
-    icon: <SiFrontendmentor />,
-  },
-  { id: 5, url: "https://www.youtube.com/@tupicode", icon: <FaYoutube /> },
-];
+]
