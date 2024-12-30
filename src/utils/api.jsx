@@ -43,14 +43,6 @@ export const projects = [
     buttonText: "Código fonte",
   },
   {
-    id: 2,
-    title: "LmCars",
-    description:
-      "Aplicação web desenvolvida para representar uma concessionária fictícia, feito React, Javascript, Sass, Axios, Vercel.",
-    url: `https://lmcars.vercel.app/`,
-    buttonText: "Código Privado",
-  },
-  {
     id: 3,
     title: "FoodSaintly",
     description:
